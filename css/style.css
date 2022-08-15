@@ -171,3 +171,52 @@ nav li {
         background-position: 200% center;
     }
 }
+
+
+
+#iAm{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 5vh;
+    height: 20px;
+
+    position: absolute;
+}
+
+
+#restText{
+    width: 4vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.rotating-thing{
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    /*left: 3.5vw;*/
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.5s;
+    color: gold;
+    perspective: 500px;
+    padding-left: 4px;
+
+}
+
+
+.rotating-thing.show{
+
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.rotating-thing.hide{
+    opacity: 0;
+    transform: translateY(50px);
+}
