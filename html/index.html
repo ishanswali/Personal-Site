@@ -12,7 +12,7 @@
 
 
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsqZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -41,53 +41,54 @@
         <div class="rotating-thing" id="rotating"></div>
     </div>
     <div id="subText">
-        <p>Aerospace + CS + Robotics + AI + Astronomy</p>
-    </div>
-    <a href="https://google.com" id="contact"><div>
-        <p>Contact Me</p>
-    </div></a>
-</div>
+        <!--   <p>Aerospace + Computer Science</p> -->
+     </div>
+     <a href="https://google.com" id="contact"><div>
+         <p>Contact Me</p>
+     </div></a>
+ </div>
 
-<div class="menu" id="lowerMenu">
-    <ul>
-        <li><a class="fa fa-envelope-o" href="mailto:ishanswali9@gmail.com" id="emailIcon" target="_blank"></a></li>
-        <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/ishanswali/" target="_blank"></a></li>
-        <li><a class="fa fa-github" href="https://github.com/23swalisha" target="_blank"></a></li>
-        <li><a class="fa fa-codepen" href="https://codepen.io/23swalisha" target="_blank"></a></li>
-        <li><a class="fa fa-instagram" href="https://www.instagram.com/ish_swali/" target="_blank"></a></li>
-    </ul>
-</div>
-</body>
-</html>
+ <div class="menu" id="lowerMenu">
+     <ul>
+         <li><a class="fa fa-envelope-o" href="mailto:ishanswali9@gmail.com" id="emailIcon" target="_blank"></a></li>
+         <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/ishanswali/" target="_blank"></a></li>
+         <li><a class="fa fa-github" href="https://github.com/23swalisha" target="_blank"></a></li>
+         <!--  <li><a class="fa fa-codepen" href="https://codepen.io/23swalisha" target="_blank"></a></li>
+        <li><a class="fa fa-instagram" href="https://www.instagram.com/ish_swali/" target="_blank"></a></li></li>
+         -->
+     </ul>
+ </div>
+ </body>
+ </html>
 
-<script src="../js/particles.js"></script>
-<script src="../js/app.js"></script>
-<script>
-    const rotating = document.getElementById("rotating")
-    const list = ['Ishan Swali', 'an AI Developer', 'an Aspiring Astronaut', 'A Shen High School Student'];
-    const wait = (func, timeout) => {
-        return new Promise(resolve => setTimeout(() => {
-            resolve(func());
+ <script src="../js/particles.js"></script>
+ <script src="../js/app.js"></script>
+ <script>
+     const rotating = document.getElementById("rotating")
+     const list = ['Ishan Swali', 'an AI Developer', 'a Roboticist', 'an Aspiring Astronaut'];
+     const wait = (func, timeout) => {
+         return new Promise(resolve => setTimeout(() => {
+             resolve(func());
 
-        }, timeout));
-    }
+         }, timeout));
+     }
 
-    (async () => {
-        let index = 0;
-        while (true) {
-            await wait(() => {
-                rotating.classList.add("show");
-                rotating.textContent = list[index];
-                index = ++index % list.length;
-            }, 1000);
-            await wait(() => {
-                rotating.classList.add("hide");
-            }, 1500)
+     (async () => {
+         let index = 0;
+         while (true) {
+             await wait(() => {
+                 rotating.classList.add("show");
+                 rotating.textContent = list[index];
+                 index = ++index % list.length;
+             }, 1000);
+             await wait(() => {
+                 rotating.classList.add("hide");
+             }, 1500)
 
-            await wait(() => {
-                rotating.classList.remove("show");
-                rotating.classList.remove("hide");
-            }, 500);
-        }
-    })()
-</script>
+             await wait(() => {
+                 rotating.classList.remove("show");
+                 rotating.classList.remove("hide");
+             }, 500);
+         }
+     })()
+ </script>
