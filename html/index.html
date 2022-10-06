@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Ishan Swali" name="author"/>
     <link href="../css/style.css" media="screen" rel="stylesheet">
-    <link href="../css/menu.css" media="screen" rel="stylesheet">
+    <link href="../css/divider.css" media="screen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas%20Neue" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space%20Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open%20Sans" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload=' location.href="#landing" '>
 <!--<div id="particles-js"></div>-->
 
 
@@ -31,10 +31,10 @@
 
         <nav class="menu navbar" id="nav">
             <ul>
-                <li><a class="nav-link nav-link-ltr" href="#">Home</a></li>
+                <!--<li><a class="nav-link nav-link-ltr" href="#">Home</a></li>-->
                 <li><a class="nav-link nav-link-ltr" href="#aboutMe">About</a></li>
-                <li><a class="nav-link nav-link-ltr" href="#">Portfolio</a></li>
-                <li><a class="nav-link nav-link-ltr" href="#">Blog</a></li>
+                <li><a class="nav-link nav-link-ltr" href="#featuredProject">Featured Project</a></li>
+               <!-- <li><a class="nav-link nav-link-ltr" href="#">Blog</a></li>-->
                 <li><a class="nav-link nav-link-ltr" href="#">Contact</a></li>
             </ul>
         </nav>
@@ -48,14 +48,14 @@
         <div id="subText">
             <!--   <p>Aerospace + Computer Science</p> -->
         </div>
-        <a href="https://google.com" id="contact">
+        <a href="mailto:ishanswali9@gmail.com" id="contact">
             <div>
                 <p>Contact Me</p>
             </div>
         </a>
 
         <div id="downArrow">
-           <a href="#aboutMe"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <a href="#aboutMe"><i aria-hidden="true" class="fa fa-angle-down"></i></a>
         </div>
     </div>
 
@@ -77,11 +77,14 @@
 </div>
 
 
+
+
 <div id="aboutMe">
     <div id="content">
-        <div id="aboutMeWords" class='reveal'>
+        <div class='reveal' id="aboutMeWords">
             <p id="helloHeader">Allow me to introduce myself...</p>
-            <p id="helloWords">Hi! <!--👋 -->I'm Ishan Swali. I'm a Senior at Shenendehowa High School. I'm passionate about
+            <p id="helloWords">Hi! <!--👋 -->I'm Ishan Swali. I'm a Senior at Shenendehowa High School. I'm passionate
+                about
                 science and technology, and applying them towards today's aerospace and autonomy challenges. I
                 especially enjoy problem-solving using Robotics and AI.
                 <br><br>
@@ -103,20 +106,54 @@
         </div>
 
         <div id="aboutMeImages">
-            <img alt="dinosaur" class='reveal' id="picture" src="../Ishan%20Swali.JPG"/>
+            <img alt="dinosaur" class='reveal' id="picture" src="../images/Ishan%20Swali.JPG"/>
         </div>
 
     </div>
     <div id="whiteTriangle1"></div>
     <div id="whiteTriangle2"></div>
-    <div id="greyTriangles"></div>
+    <div class="greyTriangles"></div>
 
 </div>
+
+<hr>
+
 
 <div id="featuredProject">
+
+   <div id="featuredContent">
+    <div id="featuredProjectWords" >
+        <div id="featuredHeader" class="reveal">Featured Project</div>
+    </div>
+
+    <div id="featuredDescription">
+    <p>
+        This was a small side project to work on some automation using NASA's Astronomy Picture of the Day (APOD) API. Check it out <a href="https://github.com/ishanswali/NASAAPODTextBot">here</a>.
+    </p>
+    <p>It sends messages through a reconstructed SMS/MMS service built by <a href="https://www.alfredosequeida.com">Alfredo Sequeida</a></p>
+
+    <p>
+        The APOD Bot sends a daily message based on a preset timezone, mobile provider, and phone number. It pulls data from the NASA API, reformats it, and sends it through my MMS system.
+    </p>
+        <p>
+            My next step for this project is to create a site where individuals can register for the texting service.
+        </p>
+    </div>
+    <div id="projectImage">
+        <img id="exampleimage" src="../images/Example.png" alt="projectexample" />
+    </div>
+
+    <div id="whiteSquare2"></div>
+    <div id="whiteSquare3"></div>
+    <div class="greyTriangles"></div>
+   </div>
 </div>
-
-
+<!--
+<div id="footer">
+    <p>@2022 by Ishan Swali</p>
+    <p>ishanswali9@gmail.com</p>
+</div>
+-->
 </body>
 </html>
 

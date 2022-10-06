@@ -39,9 +39,8 @@ canvas {
 
 
 #landing {
-
-    background-image: url("../Space.jpg");
-    min-height: 100vh;
+    background-image: url("../images/Space.jpg");
+    min-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,12 +146,13 @@ nav li {
 
 #lowerMenu a {
     font-size: 2vw;
-    color: #9d9d9d;
+    color: #838383;
+
     text-decoration: none;
 }
 
 #lowerMenu a:hover {
-    color: #f7f7f7;
+    color: #9d9d9d;
 }
 
 #lowerMenu li {
@@ -296,18 +296,6 @@ nav li {
 
 
 
-#greyTriangles{
-    position: absolute;
-    z-index: -2;
-    background-color: #FBFAF5;
-    background-image: linear-gradient(to bottom right, rgba(196,196,196,0.6) 10%, transparent 11%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px;
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-}
-
 #whiteTriangle1 {
     position: absolute;
     z-index: -1;
@@ -315,7 +303,7 @@ nav li {
     width: 0;
     height: 0;
     border-top: 70vh solid transparent;
-    border-right: 70vw solid #FBFAF5;
+    border-right: 70vw solid #ffffff;
     right: 0;
 
 }
@@ -328,7 +316,7 @@ nav li {
     height: 0;
 
     border-bottom: 70vh solid transparent;
-    border-left: 70vw solid #FBFAF5;
+    border-left: 70vw solid #ffffff;
 }
 
 
@@ -337,11 +325,9 @@ nav li {
     font-family: 'Bebas Neue', sans-serif;
     position: absolute;
     color: #12142d;
-    font-size: 3vw;
-    top: 5vh;
+    font-size: 3.5vw;
+    top: 3vh;
     left: 12vw;
-
-
 }
 
 #helloWords {
@@ -372,14 +358,14 @@ nav li {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 2s all ease;
 }
 
 #aboutMeWords{
     position: relative;
     transform: translateX(-150px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
 }
 
 #aboutMeWords.active{
@@ -390,7 +376,7 @@ nav li {
 #picture{
     transform: translateX(150px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
 }
 
 #picture.active{
@@ -398,9 +384,156 @@ nav li {
     opacity: 1;
 }
 
+.greyTriangles{
+    position: absolute;
+    z-index: -2;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom right, rgba(196,196,196,0.6) 10%, transparent 11%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 #featuredProject {
     position: relative;
-    height: 1000px;
-    background-color: blue;
+    height: 100vh;
     font-size: 0;
 }
+
+#featuredContent{
+
+}
+#featuredHeader {
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    width: max-content;
+    opacity: 0;
+
+}
+
+
+#featuredHeader.active{
+    transform: translate(-50%, -40%);
+    transition: 1.5s all ease;
+    opacity: 1;
+}
+
+
+#whiteSquare1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    height: 1vh;
+    width: 100%;
+    background-color:#ffffff;
+}
+
+#whiteSquare2 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    height: 100%;
+    width: 6vw;
+    background-color: #ffffff;
+}
+
+#whiteSquare3 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 30vw;
+
+    height: 100%;
+    width: 70vw;
+    background-color: #ffffff;
+}
+
+hr{
+    clear: both;
+    visibility: hidden;
+
+}
+
+#featuredDescription{
+    position: absolute;
+    left: 10vw;
+    top: 14vh;
+    width: 30vw;
+    font-size: 1.4vw;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #12142d;
+}
+
+a, a:hover, a:focus, a:active {
+    color: inherit;
+}
+
+#exampleimage{
+    top: 16vh;
+    right: 11vw;
+    position: absolute;
+    height: 70vh;
+    width: auto;
+}
+
+#footer{
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+div.elem-group {
+    margin: 40px 0;
+}
+
+label {
+    display: block;
+    font-family: 'Aleo';
+    padding-bottom: 4px;
+    font-size: 1.25em;
+}
+
+input, select, textarea {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Aleo';
+    width: 500px;
+    padding: 8px;
+}
+
+textarea {
+    height: 250px;
+}
+
+button {
+    height: 50px;
+    background: green;
+    color: white;
+    border: 2px solid darkgreen;
+    font-size: 1.25em;
+    font-family: 'Aleo';
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+
