@@ -133,11 +133,12 @@ nav li {
 
 
 #lowerMenu {
-    position: fixed;
+    position: relative;
     z-index: 1000;
     list-style-type: none;
-    bottom: 7vh;
-    right: 7vw;
+    float: right;
+    right: 6vw;
+    bottom: 2vh;
 }
 
 #lowerMenu ul {
@@ -493,8 +494,8 @@ a, a:hover, a:focus, a:active {
 }
 
 #footer{
-    height: 100vh;
-    background-color: #f7f7f7;
+    height: 5vh;
+    background-color: #ffffff;
 }
 div.elem-group {
     margin: 40px 0;
