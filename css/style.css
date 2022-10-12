@@ -82,7 +82,7 @@ canvas {
 }
 
 #lowerMenu a {
-    font-size: 2vw;
+    font-size: 2rem;
     color: #838383;
 
     text-decoration: none;
@@ -112,7 +112,7 @@ canvas {
     top: 80%;
     position: absolute;
     color: #f7f7f7;
-    font-size: 10vh;
+    font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,7 +231,6 @@ canvas {
 
 
 #aboutMe {
-
     position: relative;
     height: 100vh;
     font-size: 0;
@@ -268,8 +267,8 @@ canvas {
     font-family: 'Bebas Neue', sans-serif;
     position: absolute;
     color: #12142d;
-    font-size: 3.5vw;
-    top: 3vh;
+    font-size: 3.5rem;
+    top: 0vh;
     left: 12vw;
 }
 
@@ -278,19 +277,17 @@ canvas {
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     color: #12142d;
-    font-size: 1.25vw;
-    top: 17vh;
+    font-size: 1.25rem;
+    top: 15vh;
     left: 12vw;
-    width: 37vw;
-
-
+    width: 37%;
 }
 
 #picture {
     position: absolute;
-    height: 35vw;
+    height: 35rem;
     width: auto;
-    top: 15vh;
+    top: 20vh;
     right: 15vw;
     border-radius: 2vw;
     box-shadow: 1vh .5vw #9d9d9d;
@@ -359,7 +356,7 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 4rem;
     width: max-content;
     opacity: 0;
 
@@ -414,8 +411,8 @@ hr{
     position: absolute;
     left: 10vw;
     top: 14vh;
-    width: 30vw;
-    font-size: 1.4vw;
+    width: 35vw;
+    font-size: 1.4rem;
     text-decoration: none;
 
     font-weight: bold;
@@ -429,9 +426,9 @@ a, a:hover, a:focus, a:active {
 
 #exampleimage{
     top: 16vh;
-    right: 11vw;
+    right: 20vw;
     position: absolute;
-    height: 70vh;
+    height: 75vh;
     width: auto;
 }
 
@@ -439,44 +436,76 @@ a, a:hover, a:focus, a:active {
     height: 5vh;
     background-color: #ffffff;
 }
-div.elem-group {
-    margin: 40px 0;
+
+@media screen and (max-width: 1300px) {
+
+    #picture{
+        position: absolute;
+        height: 35rem;
+        width: auto;
+        top: 25vh;
+        right: 10vw;
+        border-radius: 2vw;
+        box-shadow: 1vh .5vw #9d9d9d;
+    }
+    #featuredProject {
+        top: 5vh;
+    }
 }
 
-label {
-    display: block;
-    font-family: 'Aleo';
-    padding-bottom: 4px;
-    font-size: 1.25em;
+@media screen and (max-width: 1200px) {
+    #featuredProject {
+        top: 25vh;
+    }
+    #lowerMenu{
+        top: 25vh;
+    }
 }
 
-input, select, textarea {
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: 'Aleo';
-    width: 500px;
-    padding: 8px;
+@media screen and (max-width: 1100px) {
+
+
+    #aboutMeWords{
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        color: #12142d;
+        font-size: 1.25rem;
+        width: 200vw;
+        text-align: center;
+    }
+
+    #helloHeader {
+        font-weight: bold;
+        font-family: 'Bebas Neue', sans-serif;
+        position: absolute;
+        color: #12142d;
+        font-size: 3.5rem;
+        left: 20vw;
+
+    }
+
+    #helloWords {
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        color: #12142d;
+        font-size: 1.25rem;
+        top: 15vh;
+        width: 37%;
+    }
+    #picture{
+        position: absolute;
+        height: 35rem;
+        width: auto;
+        top: 85vh;
+        right: 30vw;
+        border-radius: 2vw;
+        box-shadow: 1vh .5vw #9d9d9d;
+    }
+
+
+    #featuredProject {
+        display: none;
+    }
 }
-
-textarea {
-    height: 250px;
-}
-
-button {
-    height: 50px;
-    background: green;
-    color: white;
-    border: 2px solid darkgreen;
-    font-size: 1.25em;
-    font-family: 'Aleo';
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    border: 2px solid black;
-}
-
-
