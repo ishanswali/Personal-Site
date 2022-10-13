@@ -74,7 +74,7 @@ canvas {
     list-style-type: none;
     float: right;
     right: 6vw;
-    bottom: 2vh;
+    top: 2vh;
 }
 
 #lowerMenu ul {
@@ -339,6 +339,7 @@ canvas {
 
 
 #featuredProject {
+    top: 10vh;
     position: relative;
     height: 100vh;
     font-size: 0;
@@ -438,6 +439,9 @@ a, a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 1300px) {
+    #featuredProject {
+        margin-top: 10vh;
+    }
 
     #picture{
         position: absolute;
@@ -465,6 +469,10 @@ a, a:hover, a:focus, a:active {
 @media screen and (max-width: 1100px) {
 
 
+    #featuredProject {
+        margin-top: 50vh;
+    }
+
     #aboutMeWords{
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
@@ -481,8 +489,8 @@ a, a:hover, a:focus, a:active {
         position: absolute;
         color: #12142d;
         font-size: 3.5rem;
-        left: 20vw;
-
+        left: 14vw;
+        width: 37%;
     }
 
     #helloWords {
@@ -505,7 +513,79 @@ a, a:hover, a:focus, a:active {
     }
 
 
+
+}
+
+@media screen and (max-width: 1000px) {
     #featuredProject {
-        display: none;
+        margin-top: 60vh;
+    }
+    #picture{
+        position: absolute;
+        height: 35rem;
+        width: auto;
+        top: 95vh;
+        right: 27vw;
+        border-radius: 2vw;
+        box-shadow: 1vh .5vw #9d9d9d;
+    }
+
+    #helloWords{
+        top: 17vh;
     }
 }
+
+@media screen and (max-width: 850px) {
+    #featuredProject {
+        margin-top: 70vh;
+    }
+    #picture{
+        position: absolute;
+        height: 35rem;
+        width: auto;
+        top: 110vh;
+        right: 22vw;
+        border-radius: 2vw;
+        box-shadow: 1vh .5vw #9d9d9d;
+    }
+
+    #helloWords{
+        top: 25vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #exampleimage{
+        right: 10vw;
+    }
+    #featuredProject {
+        margin-top: 75vh;
+    }
+    #picture{
+        top: 115vh;
+        right: 20vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #featuredProject{
+        margin-top: 80vh;
+    }
+    #exampleimage{
+        right: 5vw;
+    }
+    #picture{
+        top: 120vh;
+        right: 16vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+
+    #picture{
+        top: 130vh;
+        right: 8vw;
+    }
+}
+
