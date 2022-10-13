@@ -597,6 +597,14 @@ a, a:hover, a:focus, a:active {
         top: 160vh;
         right: 15vw;
     }
+    #exampleimage{
+        top: 110vh;
+        right: 15vw;
+    }
+
+    #lowerMenu{
+        top: 190vh;
+    }
 }
 
 
@@ -610,6 +618,15 @@ a, a:hover, a:focus, a:active {
     }
     #featuredProject{
         top: 75vh;
+    }
+
+    #exampleimage{
+        top: 110vh;
+        right: 15vw;
+    }
+
+    #lowerMenu{
+        top: 190vh;
     }
 }
 
