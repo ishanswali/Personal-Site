@@ -567,6 +567,16 @@ a, a:hover, a:focus, a:active {
     }
 }
 
+
+
+@media screen and (max-width: 560px) {
+
+
+    #picture{
+        top: 130vh;
+        right: 8vw;
+    }
+}
 @media screen and (max-width: 650px) {
     #featuredProject{
         margin-top: 80vh;
@@ -577,15 +587,6 @@ a, a:hover, a:focus, a:active {
     #picture{
         top: 120vh;
         right: 16vw;
-    }
-}
-
-@media screen and (max-width: 560px) {
-
-
-    #picture{
-        top: 130vh;
-        right: 8vw;
     }
 }
 
